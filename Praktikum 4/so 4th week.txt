@@ -1,0 +1,70 @@
+ps --> status proses sistem operasi
+px --> ada informasi stacknya
+ps -u --> nampilin proses status dari user yang sedang digunakan pas logintadi
+status proses user yang lebih detail / another user --> ps -u [nama user]
+menampilkan semua proses status --> ps -a
+status semua user --> ps au
+
+Beda fg dan bg
+fg = aplikasi
+bg = bg proses
+
+buat fg jadi bg cara : masukin tanda & setelah xlogo
+fg % buat bg jadi fg lagee
+
+kill --> mematikan proses yang ada
+ps --> liat proses
+
+nice --> nilai prioritas sebuah proses
+mana yang bakal dijalanin dulu
+
+NI = 0 (default)
+how to change it? --> Renice
+
+batas = 19
+
+proses fork gagal mengembalikan nilai minus 1
+fork ada proses parent and child dimana id nya beda (id beda = 1)
+
+PPID --> proses ID dari parent
+
+After installation
+
+buka modul di ubuntu via internet --> copas, perhatikan indent
+nano Lab1.c
+trus copas
+
+q
+abis nano lab1.c
+gcc Lab1.c -o Lab1
+./Lab1 (enter)
+ntar ke run Hello World
+
+Penjelasan :
+fork dijalankan ada 2 proses --> induk and child
+I am after forking <-- mother
+then <-- child
+(tergantung comp.)
+if file anak bisa dibuat bakal keluar nilai value 0, selain 0 = parent
+
+nano Lab2.c (Terminal baru)
+
+after run code terminal awal
+gcc Lab2.c -o Lab2
+./Lab2
+
+Terminal baru lagi buat Lab3
+
+bawah ./Lab2
+gcc Lab3.c -o Lab3
+./Lab3
+(bisa keluar anak or induk dulu...)
+Menjalankan 4 proses cuz udah dibikin 2 proses, buat lagi 2 proses
+
+buat proses anak setelah perintah fork dijalankan
+fork --> membuat proses anak (child)
+
+Lab1,2,3 ga taw yang keluar mama apa anak dulu
+
+Lab4.c
+wait = parent keluar setelah anaknya keluar
